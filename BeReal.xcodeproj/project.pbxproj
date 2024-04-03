@@ -21,6 +21,8 @@
 		7B27B6C22BB504E4005C7582 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27B6C12BB504E4005C7582 /* Post.swift */; };
 		7B27B6C52BB50AF5005C7582 /* ParseSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 7B27B6C42BB50AF5005C7582 /* ParseSwift */; };
 		7B27B6C82BB50B26005C7582 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 7B27B6C72BB50B26005C7582 /* AlamofireImage */; };
+		7B27B6D02BB65F65005C7582 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B27B6CF2BB65F65005C7582 /* FeedViewController.swift */; };
+		7BEC925A2BB8F85A00844ED7 /* FeedViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEC92592BB8F85A00844ED7 /* FeedViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		7B27B6BD2BB4FD20005C7582 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		7B27B6BF2BB5019C005C7582 /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
 		7B27B6C12BB504E4005C7582 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		7B27B6CF2BB65F65005C7582 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		7BEC92592BB8F85A00844ED7 /* FeedViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,12 +77,14 @@
 			isa = PBXGroup;
 			children = (
 				7B27B69C2BAC6F15005C7582 /* AppDelegate.swift */,
+				7B27B69E2BAC6F15005C7582 /* SceneDelegate.swift */,
 				7B27B6B92BB4F7D1005C7582 /* UserSignUp.swift */,
 				7B27B6A02BAC6F15005C7582 /* SignupViewController.swift */,
 				7B27B6BF2BB5019C005C7582 /* PostViewController.swift */,
 				7B27B6C12BB504E4005C7582 /* Post.swift */,
 				7B27B6BD2BB4FD20005C7582 /* LoginViewController.swift */,
-				7B27B69E2BAC6F15005C7582 /* SceneDelegate.swift */,
+				7BEC92592BB8F85A00844ED7 /* FeedViewCell.swift */,
+				7B27B6CF2BB65F65005C7582 /* FeedViewController.swift */,
 				7B27B6A22BAC6F15005C7582 /* Main.storyboard */,
 				7B27B6A52BAC6F18005C7582 /* Assets.xcassets */,
 				7B27B6A72BAC6F18005C7582 /* LaunchScreen.storyboard */,
@@ -171,7 +177,9 @@
 				7B27B6C02BB5019C005C7582 /* PostViewController.swift in Sources */,
 				7B27B6BA2BB4F7D1005C7582 /* UserSignUp.swift in Sources */,
 				7B27B6A12BAC6F15005C7582 /* SignupViewController.swift in Sources */,
+				7B27B6D02BB65F65005C7582 /* FeedViewController.swift in Sources */,
 				7B27B69D2BAC6F15005C7582 /* AppDelegate.swift in Sources */,
+				7BEC925A2BB8F85A00844ED7 /* FeedViewCell.swift in Sources */,
 				7B27B6BE2BB4FD20005C7582 /* LoginViewController.swift in Sources */,
 				7B27B6C22BB504E4005C7582 /* Post.swift in Sources */,
 				7B27B69F2BAC6F15005C7582 /* SceneDelegate.swift in Sources */,

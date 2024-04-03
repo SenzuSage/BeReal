@@ -18,6 +18,7 @@ struct Post: ParseObject {
     var updatedAt: Date?
     var ACL: ParseACL?
     var originalData: Data?
+    var location: String?
 
     // Your own custom properties.
     var caption: String?

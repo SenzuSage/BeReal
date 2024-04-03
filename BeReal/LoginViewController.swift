@@ -20,6 +20,31 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func signUp(_ sender: Any) {
+        var newUser = User()
+        newUser.username = usernameField.text
+        
+        newUser.password = passwordField.text
+
+        newUser.signup { [weak self] result in
+
+            switch result {
+            case .success(let user):
+
+                print("✅ Successfully signed up user \(user)")
+                
+                
+                
+                // Post a notification that the user has successfully signed up.
+                NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
+
+            case .failure(let error):
+                // Failed sign up
+                self?.showAlert(description: error.localizedDescription)
+            }
+        }
+
+        
+        
     }
     @IBAction func onLoginTapped(_ sender: Any) {
 
@@ -37,7 +62,7 @@ class LoginViewController: UIViewController {
             switch result {
             case .success(let user):
                 print("✅ Successfully logged in as user: \(user)")
-
+                
                 // Post a notification that the user has successfully logged in.
                 NotificationCenter.default.post(name: Notification.Name("login"), object: nil)
 

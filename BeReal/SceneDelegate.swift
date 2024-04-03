@@ -35,7 +35,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //  Check for cached user for persisted log in.
         // Check if a current user exists
         if User.current != nil {
-            //login()
+            login()
         }
 
     }
