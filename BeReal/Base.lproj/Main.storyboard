@@ -218,23 +218,36 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xEZ-ZC-kjJ">
+                                                    <rect key="frame" x="20" y="48" width="353" height="320"/>
+                                                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="pgx-Dw-9zj">
+                                                        <rect key="frame" x="0.0" y="0.0" width="353" height="320"/>
+                                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                    </view>
+                                                    <blurEffect style="regular"/>
+                                                </visualEffectView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="BXQ-tT-dO7" firstAttribute="leading" secondItem="pr1-2m-l2d" secondAttribute="leadingMargin" id="2eH-Or-aUW"/>
                                                 <constraint firstItem="Zeh-lP-Ia7" firstAttribute="top" secondItem="jzf-th-Uxw" secondAttribute="bottom" constant="8" id="4o1-io-XZa"/>
                                                 <constraint firstItem="BXQ-tT-dO7" firstAttribute="trailing" secondItem="pr1-2m-l2d" secondAttribute="trailingMargin" id="6wW-0J-y7O"/>
                                                 <constraint firstAttribute="trailing" secondItem="kvF-Ta-z2h" secondAttribute="trailing" constant="15" id="762-8N-Evw"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="xEZ-ZC-kjJ" secondAttribute="trailing" id="FZB-Mh-aXQ"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="BXQ-tT-dO7" secondAttribute="bottom" id="K0g-RY-w4k"/>
                                                 <constraint firstItem="jzf-th-Uxw" firstAttribute="top" secondItem="pr1-2m-l2d" secondAttribute="topMargin" id="R9r-vt-Y2Q"/>
+                                                <constraint firstItem="xEZ-ZC-kjJ" firstAttribute="leading" secondItem="pr1-2m-l2d" secondAttribute="leadingMargin" id="T0C-hJ-Eon"/>
                                                 <constraint firstItem="BXQ-tT-dO7" firstAttribute="top" secondItem="Zeh-lP-Ia7" secondAttribute="bottom" constant="8" id="agW-Rm-w3w"/>
+                                                <constraint firstItem="xEZ-ZC-kjJ" firstAttribute="top" secondItem="jzf-th-Uxw" secondAttribute="bottom" constant="8" symbolic="YES" id="dLX-AF-eSy"/>
                                                 <constraint firstItem="Zeh-lP-Ia7" firstAttribute="trailing" secondItem="pr1-2m-l2d" secondAttribute="trailingMargin" id="eWj-S7-eZO"/>
                                                 <constraint firstAttribute="bottom" secondItem="kvF-Ta-z2h" secondAttribute="bottom" constant="15" id="sdV-3w-xqQ"/>
                                                 <constraint firstItem="jzf-th-Uxw" firstAttribute="leading" secondItem="pr1-2m-l2d" secondAttribute="leadingMargin" id="wCu-pH-cgz"/>
                                                 <constraint firstItem="jzf-th-Uxw" firstAttribute="trailing" secondItem="pr1-2m-l2d" secondAttribute="trailingMargin" id="xLp-P3-Cto"/>
+                                                <constraint firstItem="BXQ-tT-dO7" firstAttribute="top" secondItem="xEZ-ZC-kjJ" secondAttribute="bottom" constant="6" id="xi7-aK-9oy"/>
                                                 <constraint firstItem="Zeh-lP-Ia7" firstAttribute="leading" secondItem="pr1-2m-l2d" secondAttribute="leadingMargin" id="y0o-s0-fSr"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="blurView" destination="xEZ-ZC-kjJ" id="C0d-Nf-oN5"/>
                                             <outlet property="captionLabel" destination="BXQ-tT-dO7" id="wOr-5O-cqB"/>
                                             <outlet property="dateLabel" destination="kvF-Ta-z2h" id="cNR-tp-2d6"/>
                                             <outlet property="feedImage" destination="Zeh-lP-Ia7" id="8Bm-gs-sFc"/>
