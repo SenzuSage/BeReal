@@ -41,6 +41,8 @@ class FeedViewCell: UITableViewCell {
             
             // Default to blur if we can't get or compute the date's above for some reason.
             blurView.isHidden = false
+            
+        }
             // Username
             if let user = post.user {
                 userName.text = user.username
@@ -61,15 +63,14 @@ class FeedViewCell: UITableViewCell {
                     }
                 }
                 
-            } else{
-                print ("hola")}
+            }
             captionLabel.text = post.caption
             let dateFormatter = DateFormatter()
             let FormattedDate = dateFormatter.string(for: post.createdAt)
             dateLabel.text = FormattedDate
             
             
-        }
+        
         
     }
         override  func awakeFromNib() {
@@ -82,7 +83,7 @@ class FeedViewCell: UITableViewCell {
             
             
         }//Configure the view for the selected state
-    }
+}
     
     
 
